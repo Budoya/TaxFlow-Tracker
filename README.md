@@ -158,60 +158,7 @@ apoio à validação dos anexos pelo nome do arquivo;
 definição dos status operacionais;
 testes de recebimento, duplicidade, ausência na base e pendência;
 documentação da solução para manutenção e portfólio.
-> Esta seção deve ser ajustada para representar exatamente as atividades realizadas pelo autor.
-Estrutura do repositório
-```text
-fiscal-document-tracker/
-├── README.md
-├── LICENSE
-├── .gitignore
-├── SECURITY.md
-└── docs/
-    └── architecture.jpg
-```
-Recomendações para publicação
-Não versionar o arquivo `.eml` real.
-Não publicar a captura real da lista do SharePoint.
-Não publicar anexos fiscais usados em testes corporativos.
-Não incluir nomes reais de empresas, impostos, municípios ou prestadores.
-Não exportar o fluxo corporativo para este repositório.
-Não mostrar o identificador real, mesmo que o texto esteja branco.
-Não publicar prompts, expressões, IDs de conexão ou histórico de execução.
-Utilizar apenas diagramas reconstruídos e exemplos sintéticos.
-Revisar também o histórico do Git antes de tornar o repositório público.
-`.gitignore` sugerido
-```gitignore
-# Mensagens e documentos reais
-*.eml
-*.msg
-*.pdf
-real-data/
-attachments/
 
-# Exportações e configurações
-*.zip
-exports/
-.env
-.env.*
-
-# Credenciais e certificados
-*.pem
-*.key
-*.pfx
-secrets/
-credentials/
-
-# Logs e temporários
-*.log
-*.tmp
-*.bak
-
-# Sistema e editores
-.DS_Store
-Thumbs.db
-.vscode/
-.idea/
-```
 Segurança
 O identificador invisível é um recurso de correlação e não de autenticação. Uma versão de produção deve depender também dos controles disponíveis no ambiente corporativo, como permissões, conectores autorizados e políticas organizacionais. Esses controles não são detalhados neste repositório.
 Aviso final
