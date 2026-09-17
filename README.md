@@ -37,8 +37,6 @@ IA integrada à automação, usada para interpretar o nome do anexo.
 SharePoint, usado como base de acompanhamento dos documentos esperados e recebidos.
 Arquitetura conceitual
 ![Arquitetura conceitual](docs/architecture.jpg)
-> Salve a imagem fornecida neste repositório como `docs/architecture.jpg`.
-O diagrama é propositalmente conceitual. Detalhes internos do fluxo, conexões, expressões, prompts e configurações não são apresentados.
 Fluxo funcional
 1. Base de controle
 O SharePoint mantém a relação de documentos esperados. Cada registro pode conter campos conceituais como:
